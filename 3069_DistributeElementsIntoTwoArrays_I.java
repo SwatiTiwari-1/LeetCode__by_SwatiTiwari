@@ -4,12 +4,11 @@ class Solution {
     public int[] resultArray(int[] nums) {
         List<Integer> arr1 = new ArrayList<>();
         List<Integer> arr2 = new ArrayList<>();
-
-        // First two operations
+        
         arr1.add(nums[0]);
         arr2.add(nums[1]);
 
-        // Remaining operations
+       
         for (int i = 2; i < nums.length; i++) {
             int last1 = arr1.get(arr1.size() - 1);
             int last2 = arr2.get(arr2.size() - 1);
@@ -21,7 +20,6 @@ class Solution {
             }
         }
 
-        // Concatenate arr1 and arr2
         int[] result = new int[nums.length];
         int index = 0;
 
